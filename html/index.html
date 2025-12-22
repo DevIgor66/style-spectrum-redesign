@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Style Spectrum — Custom Graphics</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Montserrat for headings, Inter for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <!-- Top announcement (optional) -->
+  <div class="topbar" role="note" aria-label="Announcement">
+    <div class="container topbar__inner">
+      <span>Custom murals • screen printing • live activations</span>
+      <a class="topbar__link" href="#contact">Get a quote</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Style Spectrum home">
+        <!-- Replace with your real logo -->
+        <div class="brand__mark" aria-hidden="true">S</div>
+        <div class="brand__text">
+          <span class="brand__name">STYLE SPECTRUM</span>
+          <span class="brand__tag">Custom Graphics</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn--primary btn--small" href="#contact">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" aria-label="Hero">
+      <!-- Replace the background image in CSS (hero background) with real work photo -->
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Creative studio since 2005</p>
+          <h1>We Turn Blank Spaces Into <span class="accent">Bold Statements</span></h1>
+          <p class="lead">
+            Custom murals, graphic design, screen printing and live activations for brands that want to stand out.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#work">View Our Work</a>
+            <a class="btn btn--ghost" href="#contact">Get a Quote</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="pill">✔ Real projects</div>
+            <div class="pill">✔ Custom work (no templates)</div>
+            <div class="pill">✔ Concept → Execution</div>
+          </div>
+        </div>
+
+        <aside class="hero__card" aria-label="Quick contact card">
+          <h3>Need a quote fast?</h3>
+          <p class="muted">Send your project details and we’ll reply within 24–48h.</p>
+
+          <form class="mini-form" id="miniForm">
+            <label>
+              <span class="sr-only">Name</span>
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              <span class="sr-only">Email</span>
+              <input type="email" name="email" placeholder="Email" required>
+            </label>
+            <label>
+              <span class="sr-only">Project type</span>
+              <select name="type" required>
+                <option value="" disabled selected>Project type</option>
+                <option>Mural / Street Art</option>
+                <option>Custom Graphics</option>
+                <option>Screen Printing</option>
+                <option>Live Activation</option>
+              </select>
+            </label>
+            <button class="btn btn--primary btn--block" type="submit">Request Quote</button>
+            <p class="fineprint">By sending, you agree to be contacted about this request.</p>
+          </form>
+        </aside>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head">
+          <h2>What We Do</h2>
+          <p class="muted">
+            Clear, professional services — designed for brands, venues and events.
+          </p>
+        </header>
+
+        <div class="grid grid--4">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🖌️</div>
+            <h3>Murals & Street Art</h3>
+            <p>Large-scale murals that transform spaces and tell stories people remember.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🎨</div>
+            <h3>Custom Graphics</h3>
+            <p>From brand visuals to unique hand-crafted designs for campaigns and spaces.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🖨️</div>
+            <h3>Screen Printing</h3>
+            <p>High-quality printing for apparel, events and promotional merchandise.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🎪</div>
+            <h3>Live Activations</h3>
+            <p>Art created live at events to engage audiences and elevate brand presence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section section--alt" id="work">
+      <div class="container">
+        <header class="section__head section__head--split">
+          <div>
+            <h2>Selected Work</h2>
+            <p class="muted">
+              Replace these placeholders with real photos. This grid is built for impact and credibility.
+            </p>
+          </div>
+          <div class="section__actions">
+            <a class="btn btn--primary btn--small" href="#contact">Start a Project</a>
+          </div>
+        </header>
+
+        <div class="work-grid" aria-label="Portfolio grid">
+          <!-- Replace images with your real ones. -->
+          <a class="work" href="#contact" aria-label="Project 1">
+            <img src="https://images.unsplash.com/photo-1520975693411-bfdb83d0b4b7?auto=format&fit=crop&w=1200&q=80" alt="Mural project example">
+            <div class="work__overlay">
+              <div class="work__title">Mural — Venue Wall</div>
+              <div class="work__meta">Lisbon • On-site</div>
+            </div>
+          </a>
+
+          <a class="work" href="#contact" aria-label="Project 2">
+            <img src="https://images.unsplash.com/photo-1520975869018-3d5b7a3d1b0d?auto=format&fit=crop&w=1200&q=80" alt="Street art example">
+            <div class="work__overlay">
+              <div class="work__title">Street Art — Brand Statement</div>
+              <div class="work__meta">Porto • Outdoor</div>
+            </div>
+          </a>
+
+          <a class="work" href="#contact" aria-label="Project 3">
+            <img src="https://images.unsplash.com/photo-1520975483201-7c61a86342f4?auto=format&fit=crop&w=1200&q=80" alt="Graphic design example">
+            <div class="work__overlay">
+              <div class="work__title">Custom Graphics — Campaign</div>
+              <div class="work__meta">Concept → Delivery</div>
+            </div>
+          </a>
+
+          <a class="work" href="#contact" aria-label="Project 4">
+            <img src="https://images.unsplash.com/photo-1520975915395-6d7b7f5d7ff5?auto=format&fit=crop&w=1200&q=80" alt="Live activation example">
+            <div class="work__overlay">
+              <div class="work__title">Live Activation — Event</div>
+              <div class="work__meta">Audience engagement</div>
+            </div>
+          </a>
+
+          <a class="work work--wide" href="#contact" aria-label="Project 5">
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1600&q=80" alt="Large mural example">
+            <div class="work__overlay">
+              <div class="work__title">Large Mural — Full Wall</div>
+              <div class="work__meta">Planning • Sketch • Execution</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="center mt-24">
+          <a class="btn btn--ghost" href="#contact">See Full Portfolio (add page)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head">
+          <h2>Why Style Spectrum</h2>
+          <p class="muted">
+            Simple reasons that build trust — without corporate fluff.
+          </p>
+        </header>
+
+        <div class="grid grid--2">
+          <div class="panel">
+            <ul class="checklist">
+              <li><span aria-hidden="true">✔</span> 20+ years of hands-on experience</li>
+              <li><span aria-hidden="true">✔</span> Real work, real artists, real delivery</li>
+              <li><span aria-hidden="true">✔</span> Custom concepts — no template designs</li>
+              <li><span aria-hidden="true">✔</span> End-to-end execution: concept → final</li>
+            </ul>
+          </div>
+
+          <div class="panel panel--quote">
+            <p class="quote">
+              “Professional, creative and reliable. The mural completely transformed our space.”
+            </p>
+            <p class="quote__meta muted">— Client feedback (replace with real)</p>
+            <div class="quote__actions">
+              <a class="btn btn--primary btn--small" href="#contact">Get a Quote</a>
+              <a class="btn btn--ghost btn--small" href="#work">View Work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <header class="section__head">
+          <h2>How It Works</h2>
+          <p class="muted">A clear process that keeps projects fast, clean and predictable.</p>
+        </header>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <h3>Tell us your idea</h3>
+            <p>Goals, size, location, deadlines. We’ll ask what matters and skip the noise.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <h3>We design a concept</h3>
+            <p>Sketches and direction that match your brand and space. You approve before we produce.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <h3>We bring it to life</h3>
+            <p>On-time execution with attention to detail — from materials to final finishing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section class="cta" id="contact" aria-label="Contact call to action">
+      <div class="container cta__inner">
+        <div class="cta__copy">
+          <h2>Let’s Create Something <span class="accent">Bold</span> Together</h2>
+          <p class="muted">
+            Tell us what you need. We’ll respond with next steps and a clear estimate.
+          </p>
+
+          <div class="contact-details">
+            <a href="tel:+351962351492" class="contact-link">📞 (+351) 962 351 492</a>
+            <a href="mailto:info@stylespectrum.com" class="contact-link">✉️ info@stylespectrum.com</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@email.com" required>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              <span>Project type</span>
+              <select name="type" required>
+                <option value="" disabled selected>Select one</option>
+                <option>Mural / Street Art</option>
+                <option>Custom Graphics</option>
+                <option>Screen Printing</option>
+                <option>Live Activation</option>
+              </select>
+            </label>
+            <label>
+              <span>Budget (optional)</span>
+              <input type="text" name="budget" placeholder="e.g., 500€ – 2.000€">
+            </label>
+          </div>
+
+          <label>
+            <span>Project details</span>
+            <textarea name="message" rows="5" placeholder="Tell us the size, location, deadline and what you want to achieve..." required></textarea>
+          </label>
+
+          <button class="btn btn--primary btn--block" type="submit">Send Request</button>
+          <p class="fineprint">
+            This form is a demo. Hook it to your backend/email provider later.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="brand__mark" aria-hidden="true">S</div>
+        <div>
+          <div class="footer__name">STYLE SPECTRUM</div>
+          <div class="footer__tag muted">Custom Graphics</div>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer__contact">
+        <a href="tel:+351962351492">(+351) 962 351 492</a>
+        <a href="mailto:info@stylespectrum.com">info@stylespectrum.com</a>
+        <div class="social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© <span id="year"></span> Style Spectrum. All rights reserved.</span>
+        <div class="footer__legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="fab" href="#contact" aria-label="Get a quote">Get a Quote</a>
+
+  <script src="main.js"></script>
+</body>
+</html>
